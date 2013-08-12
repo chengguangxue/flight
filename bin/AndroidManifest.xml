@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flight"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:name="com.flight.FlightApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.flight.WelcomeScreen"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+		<activity
+        	android:name="com.flight.UI.TabMenu"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+		</activity>            
+        
+		<activity
+        	android:name="com.flight.UI.Route"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+		</activity>            
+        
+		<activity
+        	android:name="com.flight.UI.MapViewer"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+		</activity>            
+        
+		<activity
+        	android:name="com.flight.UI.Query"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+		</activity>            
+        
+		<activity
+        	android:name="com.flight.UI.Input"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+		</activity>            
+        
+		<activity
+        	android:name="com.flight.UI.Setting"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+		</activity>            
+        
+		<service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+				
+    </application>
+    
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+	<uses-permission android:name="android.permission.INTERNET" />  
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+	
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+	<uses-permission android:name="android.permission.CALL_PHONE" />  
+
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  
+	<permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />  
+	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />  
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />  
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />  
+	<uses-permission android:name="android.permission.ACCESS_GPS" />
+	 	
+	<supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" 
+  	/>
+	
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <RelativeLayout
+	    android:id="@+id/rlTopBar" 
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_info_bar_default"
+    	>
+    	
+	    <ImageView 
+	        android:id="@+id/ivBack"
+	        android:layout_width="40sp"
+	        android:layout_height="40sp"
+	    	android:layout_marginLeft="10dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/ic_menu_back"
+		/>
+        
+	</RelativeLayout>        
+    
+  	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		>
+		
+		<EditText 
+	    	android:id="@+id/etName"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="5sp"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+			android:textColor="@android:color/black"
+			android:textSize="17sp"
+			android:hint="名称..."
+    	/>
+  	    	    
+		<EditText 
+	    	android:id="@+id/etLongitude"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="5sp"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+			android:textColor="@android:color/black"
+			android:textSize="17sp"
+			android:hint="经度..."
+    	/>
+		
+		<EditText 
+	    	android:id="@+id/etLatitude"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginTop="5sp"
+			android:layout_marginLeft="10sp"
+			android:layout_marginRight="10sp"
+			android:textColor="@android:color/black"
+			android:textSize="17sp"
+			android:hint="纬度..."
+    	/>
+		
+	</LinearLayout>
+		
+</LinearLayout>
